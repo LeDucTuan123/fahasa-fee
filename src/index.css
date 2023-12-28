@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@layer components {
+  .header-icon {
+    @apply flex flex-col items-center cursor-pointer lg:w-[78px];
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cart_count {
+  background-color: #7367f0;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -3px;
+  right: 17px;
+  padding: 1px 6px;
+  font-size: 10px;
+}
+
+.bg_btnAdmin {
+  background: -webkit-linear-gradient(332deg, #7367f0, rgba(115, 103, 240, 0.7));
+  background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
+  box-shadow: 0 0 10px 1px rgba(115, 103, 240, 0.7);
+  color: #ffffff;
+}
+
+.bg-primary {
+  background-color: #7367f0 !important;
+}
+
+.bg-hover_primary:hover {
+  background-color: #7367f0 !important;
+}
+
+@media (min-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #cbd5e1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #0052d4;
+    background: -webkit-linear-gradient(to bottom, #6fb1fc, #4364f7, #0052d4);
+    background: linear-gradient(to bottom, #6fb1fc, #4364f7, #0052d4);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: #1488cc;
+    background: -webkit-linear-gradient(to top, #2b32b2, #1488cc);
+    background: linear-gradient(to top, #2b32b2, #1488cc);
+  }
+}
+
+/* div */
+.scrollbar_div::-webkit-scrollbar-thumb {
+  background: #0052d4;
+  background: -webkit-linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+  background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+}
+
+.scrollbar_div::-webkit-scrollbar-thumb:hover {
+  background: #1488cc;
+  background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
+  background: linear-gradient(to right, #2b32b2, #1488cc);
+}
+
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='datetime-local']:focus,
+[type='month']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='time']:focus,
+[type='week']:focus,
+[type='checkbox']:focus,
+[type='radio']:focus,
+[multiple]:focus {
+  --tw-ring-shadow: transparent !important;
+  /* border-color: currentColor; */
+}
+
+select:focus {
+  --tw-ring-shadow: transparent !important;
+  border: 1px solid currentColor;
+}
+
+.active {
+  color: white;
+  background-color: #3333;
+}
+
+@keyframes progress {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.animate-progress {
+  background-size: 200% 100%;
+  animation: progress 2s linear infinite;
+}
+
+.imagedetail {
+  width: 76px;
+  height: 76px;
+  border-radius: 6px;
+  border: 1px solid white;
+  transition-duration: 500ms;
+}
+.imagedetail:hover {
+  border: 1px solid red;
+  scale: 1.1;
+  transform: scale(1.1);
+}
+
+.discount {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-inline: 4px;
+  background-color: #e25757;
+  color: azure;
+}
+.button-buy:hover {
+  border: 2px solid #1230b0;
+  background-color: white;
+  color: #1230b0;
+  transition-duration: 200ms;
+}
+.button-buy:active {
+  background-color: #1230b0;
+  color: white;
+}
+
+.bg-lucky {
+  background-image: url('/src/assets/image/spinlucky.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* css arrow */
+
+.ce-my-message-bubble {
+  background-color: #7a39e0 !important;
+}
+
+.ce-chat-title-text {
+  color: #7a39e0 !important;
+}
+
+.ce-chat-subtitle-text {
+  color: #7a39e0 !important;
+  font-weight: 600;
+}
+
+#ce-send-message-button {
+  position: relative !important;
+  bottom: 2px !important;
+  left: 1px !important;
+  background-color: #7a39e0 !important;
+}
+
+.ce-my-message-timestamp {
+  color: #7a39e0 !important;
+}
+
+.transition-3 {
+  transition: all 0.33s ease;
+  -webkit-transition: all 0.33s ease;
+  -moz-transition: all 0.33s ease;
+}
+
+.transition-5 {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
